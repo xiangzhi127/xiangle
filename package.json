@@ -1,0 +1,39 @@
+{
+  "name": "xiangle",
+  "version": "1.0.0",
+  "description": "this is a",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-multiparty": "^2.0.0",
+    "crypto": "0.0.3",
+    "express": "^4.14.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "jade": "^1.11.0",
+    "mocha": "^3.1.2",
+    "moment": "^2.15.1",
+    "mongoose": "^4.6.3",
+    "morgan": "^1.7.0",
+    "should": "^11.1.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-nodemon": "^0.5.4",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xiangle"
+  ],
+  "author": "liangyunkai",
+  "license": "ISC"
+}

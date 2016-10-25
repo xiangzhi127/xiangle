@@ -1,0 +1,25 @@
+app文件夹：模型、视图、控制器等内容；
+config文件夹：路由文件；
+node_modules文件夹：依赖模块；
+public文件夹：前端静态资源。
+
+资源和工具:
+后端主要用到node.js语言、express框架、jade（先改名字为pug）模板引擎、mongoDB数据库、mongoose建模工具、Moment.js时间格式化工具。
+前端主要用到jQuery、bootstrap
+
+1、需要先安装node.js
+2、创建入口文件、并通过npm安装所需要的模块
+npm install express jade moment mongoose
+npm install bower -g
+配置.bowerrc文件，使用bower安装前端静态资源时，可以指定资源安装到指定路径
+mongodb的默认端口是：27017。启动mongodb服务：切换到安装目录的bin路径，输入mongod --dbpath F:\Mongodb\data
+
+npm install grunt -g
+npm istanll grunt-cli -g
+npm install grunt-contrib-watch --save-dev
+npm install grunt-nodemon --save-dev
+npm install grunt-concurrent --save-dev
+npm install bcrypt-nodejs --save-dev
+--save-dev:将你的安装的依赖的版本号同步到package.json文件中
+
+db.users.update({},{$set:{role:50}})

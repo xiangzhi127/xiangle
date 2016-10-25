@@ -1,0 +1,190 @@
+body,ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input,button,select,textarea{outline:none} 
+#header{
+	width:100%;
+	height:100px;
+	min-width:1349px;
+	background: #fff;
+}
+#header .login-header{
+	width:80%;
+	height:100px;
+	margin:0 auto;
+}
+#header .login-header .login-logo{
+	width:110px;
+	height:100px;
+	float:left;
+}
+#header .login-header .welcome{
+	float:left;
+	width:220px;
+	height:50px;
+	font-size:30px;
+	border-left: 2px solid #efefef;
+	padding-left: 20px;
+}
+#section{
+	width:100%;
+	min-width: 1349px;
+	height:550px;
+	background-image: radial-gradient(circle at top, #ccc, #666);
+}
+#section .login-filed{
+	width:1200px;
+	height:560px;
+	margin:0 auto;
+	position:relative;
+}
+#section .login-filed .login-container{
+	width:460px;
+	height:490px;
+	float:right;
+	overflow: hidden;
+	position:absolute;
+	top: 30px;
+	right: 40px;
+	background: #fff;
+}
+#section .login-filed .login-container .login-box{
+	width: 460px;
+}
+#section .login-filed .login-container .login-box .login-tab{
+	width:460px;
+	height:45px;
+	line-height: 45px;
+	font-size: 16px;
+	margin-bottom: 15px;
+	background: #43B413; 
+	color: #fff;
+	text-align: center;
+}
+.input-list{
+	/*clear: both;*/
+    margin-left: 50px;
+    font-size: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.input-list .line{
+	width:350px;
+	height:35px;
+	margin:10px 0 0 10px;
+}
+.div-input{
+	width:350px;
+	height:35px;
+	border:1px solid #E0E0E0;
+	box-sizing:border-box;
+}
+.safe-color{
+	border:1px solid #C4F269;
+}
+.err-color{
+	border:1px solid #FF5B78;
+}
+.input-list .line .div-input .login-user{
+	background-position: 12px -12px;
+}
+.input-list .line .div-input .login-pass{
+	background-position: 12px -52px;
+}
+.input-list .line .div-input .login-identity{
+	background-position: 12px -91px;
+}
+.input-list .line .div-input .login-user-mailbox{
+	background-position: 12px -128px;
+}
+.input-list .line .div-input .login-dynamic-code{
+	background-position: 12px -52px;
+}
+.input-list .line .line-inner{
+	width:310px;
+	height:22px;
+	line-height:22px;
+	border:none;
+	background: url(../image/login_icon.png) no-repeat;
+	padding: 5px 0px 5px 40px;
+}
+.input-list .error-tip{
+	width:350px;
+	height:30px;
+}
+.input-list .identity{
+	position:relative;
+}
+.input-list .identity .identity-box {
+	position:absolute;
+	top:0;
+	left:255px;
+	width:94px;
+	height:33px;
+	background: #ccc;
+}
+.input-list .identity .identity-box a{
+	width:94px;
+	height:33px;
+	display:inline-block;
+}
+
+.input-list .code{
+	position:relative;
+}
+.input-list .code .get-code{
+	display: inline-block;
+	border-left: 1px solid #E0E0E0;
+	background: #F9F9F9;
+	width: 93px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	color:#666;
+	position:absolute;
+	top:1px;
+	left:255px;
+}
+.input-list .login-other-mes span{
+	float:left;
+	color: #999;
+}
+.input-list .login-other-mes a{
+	float:right;
+	color: #666;
+}
+.input-list .line .login-submit{
+	display: inline-block;
+	text-align: center;
+	color:#fff;
+	background: #FF8800;
+	font:18px "微软雅黑";
+	cursor:pointer;
+	width:300px;
+	height:35px;
+	border:none;
+	margin-left:30px;
+}
+.input-list .no-login-id{
+	margin-left:40px;
+	font-size:15px;
+}
+.input-list .no-login-id span{
+	color:#666;
+}
+.input-list .no-login-id a{
+	color: #F60;
+}
+#section .login-filed .login-container .login-box .other-partner{
+	margin: 10px 0px 10px 65px;
+	color: #666;
+	line-height: 24px;
+	overflow: hidden;
+}

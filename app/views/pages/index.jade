@@ -1,0 +1,30 @@
+extends ../layout
+block content
+	.container
+		.row
+			.col-md-10
+				each cat in categories
+					.panel.panel-default
+						.panel-heading.clearfix
+							.pull-left #{cat.name}
+							.pull-right
+								a(href="/results?cat=#{cat._id}&p=0") 查看更多
+						.panel-body
+							if cat.foods && cat.foods.length >0
+								each item in cat.foods
+									.col-md-4
+										.thumbnail
+											a(href="/food/#{item._id}")
+												if item.poster.indexOf('http:') > -1
+													img(src="#{item.poster}",alt="#{item.title}")
+												else
+													img(src="/upload/#{item.poster}", alt="#{item.title}")
+											.clearfix
+												.price.pull-left
+													span.price-color #{item.price}
+													span.price-color2 ￥
+												.sat.pull-right
+													span 满意度：
+													span.sat-color #{item.sat}
+											.caption
+												p.text-center #{item.name}

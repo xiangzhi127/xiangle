@@ -1,0 +1,38 @@
+extends ../layout
+block content
+  .container
+    .row
+      .col-md-12
+        .panel.panel-default
+          .panel-heading.clearfix
+            .pull-left #{keyword}
+          .panel-body
+            if foods && foods.length >0
+              each item in foods
+                .col-md-4
+                  .thumbnail
+                    a(href="/food/#{item._id}")
+                      if item.poster.indexOf('http')>-1
+                        img(src="#{item.poster}")
+                      else
+                        img(src="/upload/#{item.poster}")
+                    .clearfix
+                      .price.pull-left
+                        span.price-color #{item.price}
+                        span.price-color2 ￥
+                      .sat.pull-right
+                        span 满意度：
+                        span.sat-color #{item.sat}
+                    .caption
+                      p.text-center #{item.name}
+        ul.pagination
+          - for (var i = 0; i < totalPage; i++) {
+            - if (currentPage == (i + 1)) {
+                li.active
+                  span #{currentPage}
+            - }
+            - else {
+                li
+                  a(href='/results?#{query}&p=#{i}') #{i + 1}
+            - }
+          - }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>享知登录</title>
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<header id="header">
+		<div class="login-header">
+			<div class="login-logo">
+				<a href="/login.html"><img src="../imgs/logo1.jpg"/></a>
+			</div>
+			<p class="welcome">欢迎登录</p>
+		</div>
+	</header>
+	<div id="section">
+		<div class="login-filed">
+			<div class="login-container">
+				<div class="login-box">
+					<ul class="login-tab">享乐会员登录</ul>
+					<form class="login-member" autocomplete="off">
+						<div class="input-list member-list">
+							<div class="error-tip line">
+								<span class="login-error" style="display:none"></span>
+							</div>
+							<div class="user-name1 line">
+								<div class="div-input">
+									<input type="text" id="login-user" class="login-user line-inner"  name="login-user" placeholder="邮箱/会员名">
+								</div>
+							</div>
+							<div class="pass line">
+								<div class="div-input">
+									<input type="text " id="login-pass" class="login-pass line-inner" name="login-pass" placeholder="密码">
+								</div>
+							</div>
+				<!-- 			<div class="identity line">
+								<div class="div-input">
+									<input type="text" class="login-identity line-inner" name="login-identity" placeholder="验证码">
+									<div class="identity-box">
+										<img class="loadingImg" width="24" height="24" src="image/loading1.gif" style="display: none;">
+										<a onclick="return false;" title="" href="javascript:void(0);">
+											<img class="identify-img" src="/yanzhengma" style="display: inline;" alt="">
+										</a>
+									</div>
+								</div>
+							</div> -->
+							<div class="login-other-mes line">
+								<span><input  id="auto-login" type="checkbox" class="auto-login">
+								<label for="auto-login">两周内自动登录</label>
+								</span>
+								<a href="###" class="forget-pass">忘记密码？</a>
+							</div>
+							<div class="login-button line">
+								<input type="button" class="login-submit" value="登录" name="login-submit">	
+							</div>
+							<div class="no-login-id line">
+								<span>还没有账号？</span>
+								<a href="/register.html">立刻注册</a>
+							</div>
+						</div>
+					</form>
+					<div class="other-partner">
+						<span class="partner-tip">你还可以用以下方式登录</span>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<footer id="footer">
+		
+	</footer>	
+	<script src="../libs/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>
